@@ -45,15 +45,14 @@
       color: #ddd;
     }
 
-    .model-img {
-      border-radius: 50%;
-      overflow: hidden;
+    .logo-img {
       width: 80px;
       height: 80px;
       border: 2px solid #f7c59f;
+      overflow: hidden;
     }
 
-    .model-img img {
+    .logo-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -87,38 +86,69 @@
     }
 
     .collections {
-      padding: 20px;
+      padding: 20px 15px 5px 0;
     }
 
     .collections h3 {
       color: #f7c59f;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      padding-left: 20px;
     }
 
     .collection-images {
       display: flex;
-      gap: 10px;
-      overflow-x: auto;
+      justify-content: space-between;
+      gap: 6px;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 15px;
     }
 
     .collection-images img {
-      width: 80px;
-      height: 100px;
-      border-radius: 10px;
+      width: calc(25% - 4.5px);
+      height: 95px;
+      border-radius: 8px;
       object-fit: cover;
       border: 2px solid #fff;
+      flex-shrink: 0;
     }
 
     .socials {
       text-align: center;
-      margin: 20px;
+      margin: 0 20px 10px;
+      padding: 15px;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px dashed #f7c59f;
     }
 
-    .socials a {
-      text-decoration: none;
-      margin: 0 10px;
+    .socials h4 {
       color: #f7c59f;
-      font-size: 24px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: #f7c59f;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 0 5px rgba(247, 197, 159, 0.5));
     }
 
     .footer {
@@ -151,9 +181,8 @@
         <span>Fashion Boutique</span><br/>
         <span>Elegance in Every Stitch</span>
       </div>
-      <div class="model-img">
-        <img src="images/Generated Image November 03, 2025 - 11_20AM.png" alt="Model">
-        <!-- Replace with your model pic URL -->
+      <div class="logo-img">
+        <img src="https://z-cdn-media.chatglm.cn/files/b66d4d8c-327d-4eeb-896d-e78f06dcfc54_pasted_image_1763455496689.jpg?auth_key=1863455520-4f3467de22f14b2aa62846cfff7b1a30-0-b59b0049c9144bb1261af4632f1696b6" alt="Lakshya Logo">
       </div>
     </div>
 
@@ -171,26 +200,33 @@
     <div class="collections">
       <h3>Our Collections</h3>
       <div class="collection-images">
-        <img src="images/download (1).png" alt="Collection">
-        <img src="images/download (2).png" alt="Collection">
-        <img src="images/download (3).png" alt="Collection">
-        <img src="images/download.png" alt="Collection">
+        <img src="download (11).png" alt="Collection">
+        <img src="download (2).png" alt="Collection">
+        <img src="download (33).png" alt="Collection">
+        <img src="Generated Image November 03, 2025 - 11_20AM.png" alt="Collection">
       </div>
     </div>
 
     <!-- Socials -->
     <div class="socials">
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="28px" /></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="28px" /></a>
+      <h4>Connect With Us</h4>
+      <div class="social-icons">
+        <a href="https://instagram.com/lakshya1" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+        </a>
+        
+      </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-      <b>Lakshya Fashion Boutique</b><br/>
-      No. 608, Poonamallee High Road, Arumbakkam,<br/> Chennai – 600106
+
+        <a href="https://www.google.com/maps/search/?api=1&query=No. 608, Poonamallee High Road, Arumbakkam, Chennai 600106" target="_blank">📍 No. 608, Poonamallee High Road, Arumbakkam, Chennai – 600106</a>
       <a href="mailto:lakshmiyuvaraj3@gmail.com">📧 lakshmiyuvaraj3@gmail.com</a>
     </div>
   </div>
 
 </body>
+
+      
 </html>
